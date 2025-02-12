@@ -134,11 +134,11 @@ def display_sunburst(df):
 
 st.header("アンケートコメントの分析")
 # ファイルアップロード
-st.file_uploader("集計結果（5件法）のcsvをアップロード",
-                  type=["csv"],
-                  key="upload_csvfile",
-                  on_change=upload_csv
-                  )
+st.file_uploader("集計結果（5件法）のcsvをアップロード　merged_result_日付.csv",
+                       type=["csv"],
+                       key="upload_csvfile",
+                       on_change=upload_csv
+                       )
 
 # データフレームを空にするボタン
 if len(st.session_state.get('df', [])) != 0:
