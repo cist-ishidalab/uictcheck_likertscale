@@ -297,14 +297,14 @@ def analyze_selected_category(selected_category, grades, df, question_df):
     
 st.header("設問別スコアの分析-基本集計")    
 # ファイルアップロード
-st.file_uploader("集計結果（5件法）のcsvをアップロード",
+st.file_uploader("集計結果（5件法）のcsvをアップロード　merged_result_日付.csv",
                        type=["csv"],
                        key="upload_csvfile",
                        on_change=upload_csv
                        )
 
 # 設問文のファイルアップロード
-st.file_uploader("設問文のcsvをアップロード",
+st.file_uploader("設問文のcsvをアップロード　ISBP_Question.csv",
                        type=["csv"],
                        key="upload_csvfile2",
                        on_change=upload_csv2
